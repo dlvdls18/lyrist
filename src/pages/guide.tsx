@@ -1,10 +1,10 @@
 import Layout from "../components/Layout";
 
 const responseObject = `{
-  "title": "Fumes",
-  "artist": "EDEN",
-  "lyrics": "The morning light...",
-  "source": "Musixmatch"
+  "title": "Summer Song",
+  "artist": "Elita",
+  "lyrics": "You look cute in my shirt...",
+  "image": "https://images.genius.com/example.jpg"
 }`;
 
 export default function Guide() {
@@ -32,7 +32,7 @@ export default function Guide() {
           <p className="text-zinc-200">Response Example</p>
           <div className="overflow-x-scroll whitespace-pre-wrap rounded-md border border-zinc-600 bg-zinc-800/60 p-4 font-mono text-sm leading-tight tracking-tighter text-pink-200 shadow-xl scrollbar-thin scrollbar-track-transparent scrollbar-thumb-zinc-700/50 scrollbar-thumb-rounded-md">
             <span className="text-xs text-zinc-400">
-              /api/fumes/eden will return this JSON object
+              /api/summer+song/elita will return this JSON object
             </span>
             <p className="mt-4">{responseObject}</p>
           </div>
