@@ -34,7 +34,6 @@ const handler = async (req: NextApiRequest, res: NextApiResponse) => {
             albumArt: song?.album?.image,
             releaseDate: song?.releasedAt,
             image: song?.image,
-            searches: searches,
             song: song
           });
         } catch (error) {
