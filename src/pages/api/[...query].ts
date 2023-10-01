@@ -80,9 +80,9 @@ const handler = async (req: NextApiRequest, res: NextApiResponse) => {
             // Return just the text without JSON
             return res.status(200).send(lyrics);
           } else if (field === "title") {
-            return res.status(200).json({ title: song?.title });
+            return res.status(200).send(song?.title);
           } else if (field === "artist") {
-            return res.status(200).json({ artist: song?.artist.name });
+            return res.status(200).send(song?.artist.name);
           } else {
             // If "field" is not provided, return the full JSON response
             return res.status(200).json({
