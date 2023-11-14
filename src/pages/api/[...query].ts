@@ -83,6 +83,8 @@ const handler = async (req: NextApiRequest, res: NextApiResponse) => {
             return res.status(200).send(song?.title);
           } else if (field === "artist") {
             return res.status(200).send(song?.artist.name);
+          } else if (field === "image") {
+            return res.status(200).send(song?.image);
           } else {
             // If "field" is not provided, return the full JSON response
             return res.status(200).json({
